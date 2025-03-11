@@ -59,3 +59,74 @@ body {
 .nav-items-link:hover {
   color: #3d82fc;
 }
+/* hero section */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.hero-image {
+  min-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.hero-left,
+.hero-right {
+  width: 100%;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+}
+.hero-container .title {
+  text-align: left;
+  padding-left: 1rem;
+  /* background-color: rgb(212, 219, 205); */
+}
+.description {
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+/* media screen */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 980px;
+  }
+  .hero-left {
+    width: 40%;
+  }
+  .hero-right {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1340px;
+  }
+}
